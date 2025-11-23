@@ -99,7 +99,7 @@ class MpvPlayer(
         MPVLib.setOptionString("config-dir", context.filesDir.path)
 
         if (enableHardwareDecoding) {
-            MPVLib.setOptionString("hwdec", "mediacodec,mediacodec-copy")
+            MPVLib.setOptionString("hwdec", "mediacodec-copy")
             MPVLib.setOptionString("vo", "gpu")
         } else {
             MPVLib.setOptionString("hwdec", "no")
