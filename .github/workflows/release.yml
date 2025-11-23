@@ -1,11 +1,11 @@
 name: Create release
 
-# on:
-#   push:
-#     tags:
-#       - v*
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - v*
+# on:
+#   workflow_dispatch:
 defaults:
   run:
     shell: bash
